@@ -62,6 +62,6 @@ browser.browserAction.onClicked.addListener(toggleEnableTab);
  */
 browser.runtime.onMessage.addListener(function(msg, sender, sendResponse){
 	const newBadgeState = msg.setBadge,
-				tab = sender.tab;
+			tab = sender.tab;
 	setBadgeState(newBadgeState, tab);
 })
